@@ -1,0 +1,49 @@
+
+	::-moz-selection { background-color: #ffcf0f; }
+	::selection { background-color: #ffcf0f; }
+
+	h1, h2, h3, h4, h5, h6,
+	select,
+	.twitter-wrap i,
+	.twitter-wrap a,
+	.contact-info span,
+	.contact-wrap label,
+	footer a,
+	.sequence-wrap,
+	.check-list li:before,
+	.arrow-list li:before,
+	.circle-list li:before,
+	.square-list li:before,
+	.plus-list li:before,
+	.minus-list li:before,
+	.star-list li:before,
+	.heart-list li:before,
+	.title,
+	.strong-color { color: #ffcf0f; }
+
+	#nav li a:hover,
+	#nav li.active a,
+	.about-icon,
+	.team-social li a,
+	.services,
+	.overlay .caption .icon-wrap,
+	.contact-info i,
+	.sequence-pagination li.current,
+	.sequence-pagination li:hover,
+	.sequence-title-two,
+	.social li a,
+	.skill-line,
+	.table-name h3.promo,
+	.color,
+	.flex-control-paging li a,
+	.flex-control-paging li a:hover,
+	.flex-control-paging li a.flex-active { background-color: #ffcf0f; }
+
+	.skill-bar,
+	.skill-line,
+	.quote,
+	.color { border-color: #ffcf0f; }
+
+	/* For the best effect of inactive pagination in flexslider use rgba background of your color.
+	   0.5 stands for opacity */
+	.flex-control-paging li a { background: rgba(255,207,15,0.5); }

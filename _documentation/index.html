@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amara - Theme Documentation</title>
+
+	<!-- CSS
+	================================================== -->	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/shCore.css">
+	<link rel="stylesheet" href="css/shThemeDefault.css">
+
+	<!-- JavaScript
+	================================================== -->
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushCss.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+    		$(".nav li a").click(function() {
+	        $("html, body").animate({
+	            scrollTop: $($(this).attr("href")).offset().top + "px"
+	        	}, {
+	            duration: 600,
+	        	});
+	        return false;
+	    	});
+		});
+
+		SyntaxHighlighter.all()
+
+	</script>
+
+</head>
+<body>
+
+	<div class="sidebar">
+		<img src="logo.png" class="logo">
+		<ul class="nav">
+			<li></li>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#html">HTML Structure</a></li>
+			<li><a href="#css">CSS Structure</a></li>
+			<li><a href="#java">Javascript Structure</a></li>
+			<li><a href="#custom">Customization</a></li>
+			<li><a href="#contact">Contact Form</a></li>
+			<li><a href="#credits">Credits</a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<div id="home" class="wrap">
+			<h1>Amara - Theme Documentation</h1>
+			<ul>
+				<li>Created: 10/22/2013</li>
+				<li>By: <a href="http://dekystudio.com">Deky Studio</a></li>
+				<li>Email: admin@dekystudio.com</li>
+			</ul>
+			<br>
+			<p>Thank you for purchasing this theme. If you have any questions that are beyond the scope of this help file,<br> please feel free to email me at: admin@dekystudio.com </p>
+			<br>
+			<br>
+			<p><strong>Note: Slider will not work if you just upload your files on your server. You need to set up twitter feed first.</strong></p>
+		</div>
+
+
+		<div id="html" class="wrap">
+			<h3>HTML Structure</h3>
+			<p>The template is based on <a href="http://getskeleton.com" target="blank">Skeleton</a> Framework. It comes with two different width, 960px and 1200px. Check out our <a href="http://demo.dekystudio.com/amara/">online demo</a> to chose which one do you want to use.</p>
+			<p>If you want to use 960px width include skeleton.css file</p>
+			<pre class="brush: xml">
+			<link rel="stylesheet" href="css/skeleton.css"></pre>
+			<p>If you want to use 1200px width include skeleton-wide.css file</p>
+			<pre class="brush: xml">
+			<link rel="stylesheet" href="css/skeleton-wide.css"></pre>
+		</div>
+
+
+		<div id="css" class="wrap">
+			<h3>CSS Structure</h3>
+			<p>The template css files are separated in few smaller files so you can manage them better.</p>
+			<pre class="brush: xml">
+			<link rel="stylesheet" href="css/skeleton-wide.css"> <!-- Skeleton based grid -->
+			<link rel="stylesheet" href="css/style.css"> <!-- Main stylesheet -->
+			<link rel="stylesheet" href="css/color/yellow.css"> <!-- Color stylesheet -->
+			<link rel="stylesheet" href="css/flexslider.css"> <!-- Flexslider stylesheet -->
+			<link rel="stylesheet" href="css/font-awesome.min.css"> <!-- Font Awesome stylesheet -->
+			<link rel="stylesheet" href="css/colorbox.css"> <!-- Colorbox stylesheet --></pre>
+		</div>
+
+
+		<div id="java" class="wrap">
+			<h3>Javascript Structure</h3>
+			<p>Amara use few jQuery scripts for the effects. All scripts are included in head part of the each html file. All functions that you want to customize are located in custom.js file.</p>
+			<pre class="brush: xml">
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> <!-- jQuery Google library -->
+			<script type="text/javascript" src="js/easing.1.3.js"></script> <!-- Easing -->
+			<script type="text/javascript" src="js/twitter/tweet.min.js"></script> <!-- Twitter Feed -->
+			<script type="text/javascript" src="js/nav.js"></script> <!-- Navigation -->
+			<script type="text/javascript" src="js/scrollTo.js"></script> <!-- Scroll Effects -->
+			<script type="text/javascript" src="js/sequence-min.js"></script> <!-- Sequence Slider -->
+			<script type="text/javascript" src="js/flexslider-min.js"></script> <!-- Flexslider -->
+			<script type="text/javascript" src="js/modernizr.custom.js"></script> <!-- Custom Modernizr -->
+			<script type="text/javascript" src="js/selectnav.min.js"></script> <!-- Select Navigation -->
+			<script type="text/javascript" src="js/sticky.js"></script> <!-- Sticky Navigation -->
+			<script type="text/javascript" src="js/parallax-1.1.3.js"></script> <!-- Parallax Effect -->
+			<script type="text/javascript" src="js/colorbox.js"></script> <!-- Colorbox -->
+			<script type="text/javascript" src="js/custom.js"></script> <!-- Custome theme functions -->
+			<script type="text/javascript" src="js/classie.js"></script> <!-- Animation Effect -->
+			<script type="text/javascript" src="js/cbpScroller.js"></script> <!-- Animation Effect --></pre>
+		</div>
+
+
+		<div id="custom" class="wrap">
+			<h3>Customization</h3>
+			<div class="element-wrap">
+				<h4>Background Patterns</h4>
+				<p>This theme comes with 10 background patterns (5 in black template and 5 in white template). Pick up your favorite one and add background url to the "body" element in stylesheet.</p>
+				<p>Black template patterns</p>
+				<pre class="brush: css">
+				background: url(../images/patterns/wild_oliva.png); 
+				background: url(../images/patterns/binding_dark.png); 
+				background: url(../images/patterns/tweed.png); 
+				background: url(../images/patterns/dashed.png); 
+				background: url(../images/patterns/grey_wash.png);</pre>
+				<p>White template patterns</p>
+				<pre class="brush: css">
+				background: url(../images/patterns/brickwall.png); 
+				background: url(../images/patterns/fabric.png); 
+				background: url(../images/patterns/gray_jean.png); 
+				background: url(../images/patterns/greyzz.png); 
+				background: url(../images/patterns/kindajean.png);</pre>
+				<p>You can find more patterns at <a href="http://subtlepatterns.com/">Subtle Patterns</a></p>
+			</div>
+
+			<div class="element-wrap">
+				<h4>Background Colors</h4>
+				<p>This theme preview shows how template looks in 10 different background colors (5 in black template and 5 in white template). Pick up your favorite one and add background color to the "body" element in stylesheet. Colors used in template preview are:</p>
+				<p>Black template colors</p>
+				<pre class="brush: css">
+				background-color: #111
+				background-color: #222
+				background-color: #333 
+				background-color: #444
+				background-color: #555</pre>
+				<p>White template colors</p>
+				<pre class="brush: css">
+				background-color: #fff
+				background-color: #eee
+				background-color: #ddd
+				background-color: #ccc
+				background-color: #bbb</pre>
+			</div>
+
+			<div class="element-wrap">
+				<h4>Font and Theme Colors</h4>
+				<p>The template use one separated css files for all theme colors. Chose one (only one ) of the 5 available colors and include it in to your template.</p>
+				<pre class="brush: xml">
+				<link rel="stylesheet" href="css/color/blue.css">
+				<link rel="stylesheet" href="css/color/green.css">
+				<link rel="stylesheet" href="css/color/orange.css">
+				<link rel="stylesheet" href="css/color/red.css">
+				<link rel="stylesheet" href="css/color/yellow.css"></pre>
+			</div>
+
+			<div class="element-wrap">
+				<h4>Font Family</h4>
+				<p>Amara use Google Web Fonts to display fonts in template. You can chose any of 600+ web fonts at http://www.google.com/webfonts and embeded them inside the template.</p>
+				<pre class="brush: xml">
+				<link href='http://fonts.googleapis.com/css?family=Oswald:300,400|Open+Sans:300,400' rel='stylesheet' type='text/css'></pre>
+				<p>You will also need to change font family inside style.css file</p>
+				<pre class="brush: css">
+				h1, h2, h3, h4, h5, h6 {
+				font-family: 'Oswald', sans-serif;
+				font-weight: 400;
+				line-height: 1.5; }</pre>
+				<pre class="brush: css">
+				body {
+				font: 14px/20px 'Open Sans', sans-serif;
+				font-weight: 300;
+				color: #444;
+				background-color: #fff;
+				-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+				-webkit-text-size-adjust: 100%; }</pre>
+			</div>
+
+			<div class="element-wrap">
+				<h4>Twitter Feed</h4>
+				<p>Twitter feed use <a href="https://github.com/seaofclouds/tweet">Seaofclouds</a> with <a href="https://github.com/StanScates/Tweet.js-Mod">Tweet.js-Mod</a> in order to display tweets. Since Twitter upgraded their API to 1.1 you will need to create application to get your consumer key, consumer secret, user token and user secret. <strong><a href="http://www.youtube.com/watch?v=GQaPt-gQVRI">Here is a quick video</a></strong> of how to create your application. Once you get your API keys go to js/twetter/index.php file and update the file with your keys.</p>
+			</div>
+
+			<div class="element-wrap">
+				<h4>Sequence Slider</h4>
+				<p>The template use <strong><a href="http://www.sequencejs.com/">Sequence Slider</a></strong> to display slides.<br> For more informations of how Sequence works check out their website.</p>
+			</div>
+
+			<div class="element-wrap">
+				<h4>Flex Slider</h4>
+				<p>Amara use <strong><a href="http://www.woothemes.com/flexslider/">Flex Slider</a></strong> to display twitter slides.<br> For more informations of how Flex Slider works check out their website.</p>
+			</div>
+
+			<div class="element-wrap">
+				<h4>Animation</h4>
+				<p>For animation this template use <strong><a href="http://tympanus.net/codrops/2013/07/18/on-scroll-effect-layout/">On Scroll Effect Layout</a></strong> from Codrops to display animation effects.<br> For more informations about this effect check out their website.</p>
+			</div>
+
+
+		<div id="contact" class="wrap">
+			<h3>Contact Form and Map</h3>
+			<div class="element-wrap">
+				<h4>Contact Form</h4>
+				<p>Update contact form with your email address. Open send.php file and update "$adminemail" with your email address.</p>
+			</div>
+
+			<div class="element-wrap">
+				<h4>Google Map</h4>
+				<p>Google map is iframed. If you want to change it, go to google maps (classic version), enter your location, click on link button and pick up the iframed version of the link. Update your google map by replacing only the src path inside index.html file. Leave id="map" inside iframe so map could be responsive.</p>
+				<pre class="brush: xml">
+				<iframe src="https://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=40.707909,-74.008514&amp;spn=0.015908,0.042272&amp;t=m&amp;z=15&amp;output=embed" id="map"></iframe></pre>
+			</div>
+		</div>
+
+		<div id="credits" class="wrap">
+			<div class="element-wrap">
+				<h3>Credits</h3>
+				<span class="subtitle">Amara was created with the help of:</span>
+				<ul>
+					<li><a href="http://getskeleton.com">Skeleton</a></li>
+					<li><a href="http://www.sequencejs.com/">Sequence Slider</a></li>
+					<li><a href="http://www.woothemes.com/flexslider/">Flex Slider</a></li>
+					<li><a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a></li>
+					<li><a href="http://www.google.com/fonts/">Google Web Fonts</a></li>
+					<li><a href="http://www.jacklmoore.com/colorbox/">Colorbox</a></li>
+					<li><a href="http://subtlepatterns.com/">Subtle Patterns</a></li>
+					<li><a href="http://www.ianlunn.co.uk/plugins/jquery-parallax/">Parallax</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
